@@ -196,6 +196,17 @@ Editor.create = function(){
 		exportLabel.style.margin = "10px 0";
 		Editor.dom.appendChild(exportLabel);
 
+		// CREDITS
+		var creditsLabel = Editor.createLabel(`
+			Created by <a href='https://ncase.me/' target='_blank'>Nicky Case</a>,
+			with the 💖 of their supporters
+			<a href='https://www.patreon.com/ncase' target='_blank'>on Patreon</a>~
+		`);
+		creditsLabel.style.display = "block";
+		creditsLabel.style.margin = "30px 0";
+		creditsLabel.style.fontSize = "22px";
+		Editor.dom.appendChild(creditsLabel);
+
 	}
 
 
