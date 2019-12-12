@@ -16,15 +16,15 @@ Yeah basically just download this github repository, and host it on some local s
 ###Saving your own sims locally:
 
 1. Get it running on your own computertron (see above). For the sake of this example, let's assume it's running on `http://localhost:8080/`. (which it will by default, if you use http-server)
-2. Go to `http://localhost:8080/model`, and make your own sim!
+2. Go to `http://localhost:8080/`, and make your own sim!
 3. Click "export model". Your simulation's data should pop up in a new tab.
-4. Save it locally to `[your local folder]/model/models`, as `[your sim name].json`. (NOTE: the ".json" extension is important!)
-5. Finally, to see your own sim in action, go to `http://localhost:8080/model?local=[your sim name]`! Voilà! And you can keep editing and exporting from there, just copy-paste the new data to `[your sim name].json`.
+4. Save it locally to `[your local folder]/models`, as `[your sim name].json`. (NOTE: the ".json" extension is important!)
+5. Finally, to see your own sim in action, go to `http://localhost:8080/?s=[your sim name]`! Voilà! And you can keep editing and exporting from there, just copy-paste the new data to `[your sim name].json`.
 
 Other Peeps' Stuff I Used
 ---
 
-They're all open source! Except for Firebase. Oh well.
+They're all open source!
 
 **Code Stuff:**
 
@@ -32,7 +32,6 @@ They're all open source! Except for Firebase. Oh well.
 * [Perfect Scrollbar](http://noraesae.github.io/perfect-scrollbar/) - Custom scrollbars. Mostly because Mac OS X Lion is silly and hides all the scrollbars because 'minimalism'.
 * [requestAnimationFrame shim](https://gist.github.com/paulirish/1579671) - A requestAnimationFrame polyfill.
 * [reqwest](https://github.com/ded/reqwest) - A tiny XMLHttpRequest library.
-* [Firebase](https://www.firebase.com/) - To save & load models from ☁️The Cloud☁️
 * [Platform.js](https://github.com/bestiejs/platform.js) - To test browser/OS, because there is no good emoji feature detection arrrgghhhhhhhh
 
 **Font Stuff:**

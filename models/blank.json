@@ -1,0 +1,1 @@
+{"meta":{"description":"BLANK SIM!\n\nEnter text in any textbox, change rules & emoji below, SAVE & SHARE your sim!","draw":0,"fps":30,"play":true},"states":[{"id":0,"icon":"","name":"empty spot","actions":[],"description":"hello i am blank"}],"world":{"update":"simultaneous","neighborhood":"moore","proportions":[{"stateID":0,"parts":100}],"size":{"width":40,"height":33}}}
