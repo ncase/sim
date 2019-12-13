@@ -163,7 +163,7 @@ Editor.create = function(){
 		// on save success
 		subscribe("/save/success",function(link){
 
-			saveLabel.innerHTML = "here you go! <a href='"+link+"' target='_blank'>(open in new tab)</a>";
+			saveLabel.innerHTML = "here you go! <a href='"+link+"' target='_blank'>(open in new tab)</a> (shrink link with <a href='https://tinyurl.com/' target='_blank'>TinyURL</a>)";
 			saveLink.value = link;
 			saveLink.select();
 			embedLabel.innerHTML = "to embed it, paste this code in your site:";
@@ -198,9 +198,10 @@ Editor.create = function(){
 
 		// CREDITS
 		var creditsLabel = Editor.createLabel(`
-			Created by <a href='https://ncase.me/' target='_blank'>Nicky Case</a>,
+			Made by <a href='https://ncase.me/' target='_blank'>Nicky Case</a>,
 			with the 💖 of their supporters
 			<a href='https://www.patreon.com/ncase' target='_blank'>on Patreon</a>~
+			p.s: <a href='https://github.com/ncase/sim' target='_blank'>open source!</a>
 		`);
 		creditsLabel.style.display = "block";
 		creditsLabel.style.margin = "30px 0";
