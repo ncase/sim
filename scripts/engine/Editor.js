@@ -180,7 +180,14 @@ Editor.create = function(){
 		exportModel.id = "save_changes";
 		exportModel.innerHTML = "<span style='font-size:25px; line-height:35px; font-family:monospace'>{}</span>export model";
 		exportModel.onclick = function(){
-			window.open("data:text/json;charset=utf-8,"+JSON.stringify(Model.data));
+			var blob = new Blob([JSON.stringify(Model.data)], { type: "text/json" });
+			var objectURL = URL.createObjectURL(blob);
+			var newWindow = window.open(objectURL);
+			function cleanUpCallback() {
+				URL.revokeObjectURL(objectURL);
+				newWindow.removeEventListener("load", cleanUpCallback, true);
+			}
+			newWindow.addEventListener("load", cleanUpCallback, true);
 		};
 		Editor.dom.appendChild(exportModel);
 
